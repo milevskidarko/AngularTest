@@ -1,0 +1,11 @@
+<h1>Popular TV Series</h1>
+<div class="series-cards">
+  <div *ngFor="let series of seriesList" class="series-card">
+    <img
+      [src]="'https://image.tmdb.org/t/p/w500' + series.poster_path"
+      [alt]="series.name"
+    />
+    <h2>{{ series.name }}</h2>
+    <p>{{ series.overview }}</p>
+  </div>
+</div>
